@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+	background: linear-gradient(to left, #202020, #707070);
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+
+.blurred {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    width: 800px;
+    height: 70%;
+  max-height: 35rem;
+  min-height: 15rem;
+    background-color: rgba(255, 255, 255, 0.01);
+    color: white;
+    z-index: 2;
+    border-radius: 15px;
+    padding: 29px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09); 
+box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09);
+}
+
+.container img {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    
+}
+
+.container h1 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+input {
+  width: 550px;
+  height: 40px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.01);
+    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09); 
+    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09);
+}
+
+input::placeholder {
+  opacity: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container a {
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  font-size: 18px;
+}
+
+
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .auto-type {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .youtube {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+  }
+  
+
+.blurred button {
+    cursor: pointer;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 60px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.01);
+    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09); 
+    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09);
+    width: 250px;
+    height: 45px;
+    transition: margin 0.2s ease-in-out;
+    border: rgba(255, 255, 255, 0.1) 1px solid;
+}
+
+.blurred button:hover {
+    margin-top: -5px;
+}
+
